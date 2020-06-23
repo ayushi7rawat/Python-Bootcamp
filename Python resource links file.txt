@@ -1,0 +1,25 @@
+PYTHON RESOURCES:
+
+1.PHYTHON DOCUMENT:	https://docs.python.org/3/
+
+2.Course Files for Python3 Course on Udemy:-	https://github.com/Pierian-Data/Complete-Python-3-Bootcamp
+
+3.CodingBat code practice:- 	http://codingbat.com/python
+
+4.Geeks for geeks:-	https://www.geeksforgeeks.org/python-3-basics/
+
+5.Beginner Python exercises:-	http://www.practicepython.org/
+
+6.codechef:- 	https://www.codechef.com/problems/easy?sort_by=SuccessfulSubmission&sorting_order=desc
+
+7.Leetcode:- 	https://leetcode.com/problemset/all/
+
+8.Mathematical(Harder) Practice:-	https://projecteuler.net/themes/20200426/logo_default.png
+
+9. List of Practice Problems:-	http://www.codeabbey.com/index/task_list
+
+10. A SubReddit Devoted to Daily Practice Problems:	https://www.reddit.com/r/dailyprogrammer/
+
+11. A very tricky website with very few hints problems (Not for beginners):-	http://www.pythonchallenge.com/
+
+12. 
