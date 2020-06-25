@@ -22,4 +22,6 @@ PYTHON RESOURCES:
 
 11. A very tricky website with very few hints problems (Not for beginners):-	http://www.pythonchallenge.com/
 
-12. 
+12. https://solution.programmingoneonone.com/p/hackerrank-python-challenges-solutions.html
+
+13. https://www.thepoorcoder.com/author/hackerrankdude/
