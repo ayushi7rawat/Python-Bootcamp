@@ -1,0 +1,95 @@
+PYTHON:
+00-Python Object and Data Structure Basics
+
+1. Basic Arithmetic- python store orignal division: 4/3 = 1.333333333
+	To get integer use 4//3 =1 (FLOOR DIVISION)
+
+2. POWERS 2**3
+	square--> 4**2 squareroot--> 16**0.5
+	
+3. #variable--> use DYNAMIC TYPING i.e. can be reassigned to a different datatype.
+
+4. REVERSE a String--> s[ : :-1]
+
+5. x.split() --> will split words in string x(based on whitespace)
+   x.split(e) --> will split words in string x(based on every e encountered in x)
+
+6. #string- IMMUTABLE
+
+7. string INTERPOLATION: x='sam'
+	print(f'hello {x} ')		--> f-string
+	print("hello {}". format(x))--> .format()
+
+8. LISTS: merge two lists- concatinate 2 list --> l1=['hi'] l2=['sam']
+	li1+l2 --> ['hi' , 'sam']
+	
+9. l1.append()	 l1.pop() 	sorted(l1) 	l1.reverse()	len(l1)
+
+10. DICTIONARIES: d1.keys()		d1.values()		d1.items()
+
+11. TUPLE- immutable ()
+	SETS-  unique {}
+	
+12. return the index--> t1.index('one')
+	return the no of times a value appears--> t1.count('one')
+
+13. #since immutability, tuples can't grow. Once a tuple is made we can not add to it.
+	hence append() will not work
+	
+14. list1 = [1,1,2,2,3,1]--> Cast as set to get unique values
+	set(list1)-->{1, 2, 3}
+	
+15. #We can use None as a placeholder for an object that we don't want to reassign yet:
+	b = None
+	
+16. NESTED DICTIONARY --> 	d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
+	d['k1'][2]['k2'][1]['tough'][2][0]
+
+17. sorting-NO --> dictionaries are mappings not a sequence.
+17. sorting-NO --> dictionaries are mappings not a sequence.
+
+02-PYTHON CONTROL FLOW STATEMENTS
+
+18. type(input) -->		always string.
+
+19. str even/odd -->		len(str)%2==0
+
+20. def check_even(num):
+    return num%2 == 0
+#return true if condition satisfy else false(no need for if else)
+
+21. any() is a core library function in Python. 
+	it returns true if at least one value in the sequence is true. 
+	It returns as soon as it finds the first true value.
+	
+22. from random import shuffle/randint(generators)
+
+23.  shuffle does not return anything,shuffles existing list, call list to see result.
+#same with all other generators, like range
+
+24. enumerate --> it returns INDEX with respective LETTER in string as TUPLE
+for a,b in enumerate(word):
+	print(b)
+#tuple unpacking + enumeratation 
+
+25. print(*range(1,5),sep="") --> 1234
+
+26. zip(l1,l2) --> zip two lis together, --> [(1,'a'),(2,'b')]
+
+27. max() min()
+
+28. TUPLE UNPACKING--> for a,b in t1: print(a)
+
+29. if-elif-else
+
+30. while is followed with else.
+
+31. PASS keyword. does not do anything. let the fn complie w/o any code-body
+
+32. [0]*3 same as [0,0,0]
+
+33. LIST COMPREHENSION: l1=[i**2 for i in range(0,11) if i%3==0] --> [0, 9, 36, 81]
+
+34. even num --> for i in range(0,10,2):
+    print(i)
+#instead of if i%2==0 use skip size as 2
