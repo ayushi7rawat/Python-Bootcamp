@@ -93,3 +93,38 @@ for a,b in enumerate(word):
 34. even num --> for i in range(0,10,2):
     print(i)
 #instead of if i%2==0 use skip size as 2
+
+33. SETS:
+	33.1 set union() --> a.union(b)
+	A.union(*other_sets) OR a|b
+Note: * is not part of the syntax. It is used to indicate that the method can take 0 or more arguments.
+33.2  for intersection
+33.3 – for difference
+33.4 ^ for symmetric difference
+
+34. raw_input and input --> raw_input always accepts strings
+
+35. n=int(input())
+l1=[]
+for i in range(n):
+    ele=int(input())
+    l1.append(ele)
+#method 2 : l1 = input().split(" ") --> takes input as a string elements(or num) stored as words           
+			l1=[int(i) for i in l1] --> converting elements to integer values
+
+36. abs(n1,n2) return subtraction of higher num - lower
+
+37. The eval() expression is a very powerful built-in function of Python. It helps in evaluating an expression. The expression can be a Python statement, or a code object.
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
