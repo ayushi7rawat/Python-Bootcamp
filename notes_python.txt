@@ -115,6 +115,13 @@ for i in range(n):
 36. abs(n1,n2) return subtraction of higher num - lower
 
 37. The eval() expression is a very powerful built-in function of Python. It helps in evaluating an expression. The expression can be a Python statement, or a code object.
+
+38. Multiple variable assignment -->  
+	x = y = z = 0
+	
+39. python does not support increment/decrement operators
+
+40. 
 			
 			
 			
