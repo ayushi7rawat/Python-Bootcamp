@@ -1,6 +1,5 @@
 PYTHON:
-00-Python Object and Data Structure Basics
-
+--------------------------00-Python Object and Data Structure Basics------------------------------
 1. Basic Arithmetic- python store orignal division: 4/3 = 1.333333333
 	To get integer use 4//3 =1 (FLOOR DIVISION)
 
@@ -11,19 +10,22 @@ PYTHON:
 
 4. REVERSE a String--> s[ : :-1]
 
-5. x.split() --> will split words in string x(based on whitespace)
+5. l1 = x.split() --> will split words in string x(based on whitespace)
    x.split(e) --> will split words in string x(based on every e encountered in x)
+5.2. #now to get back x, use join, to join the list elements as a string
+	" ".join(l1) -->joint with spaces b/w them
 
 6. #string- IMMUTABLE
 
 7. string INTERPOLATION: x='sam'
 	print(f'hello {x} ')		--> f-string
 	print("hello {}". format(x))--> .format()
+	print('hello' + x = 'there') --> old style way
 
 8. LISTS: merge two lists- concatinate 2 list --> l1=['hi'] l2=['sam']
 	li1+l2 --> ['hi' , 'sam']
 	
-9. l1.append()	 l1.pop() 	sorted(l1) 	l1.reverse()	len(l1)
+9. l1.append()	l1.pop()	sorted(l1)		l1.reverse()	len(l1)	clear(l1)	remove()	extend()	copy()	count()
 
 10. DICTIONARIES: d1.keys()		d1.values()		d1.items()
 
@@ -46,10 +48,8 @@ PYTHON:
 	d['k1'][2]['k2'][1]['tough'][2][0]
 
 17. sorting-NO --> dictionaries are mappings not a sequence.
-17. sorting-NO --> dictionaries are mappings not a sequence.
 
-02-PYTHON CONTROL FLOW STATEMENTS
-
+-------------------------------02-PYTHON CONTROL FLOW STATEMENTS---------------------------
 18. type(input) -->		always string.
 
 19. str even/odd -->		len(str)%2==0
@@ -102,7 +102,7 @@ Note: * is not part of the syntax. It is used to indicate that the method can ta
 33.3 – for difference
 33.4 ^ for symmetric difference
 
-34. raw_input and input --> raw_input always accepts strings
+34. raw_input and input --> raw_input always accepts strings(python old version)
 
 35. n=int(input())
 l1=[]
@@ -114,20 +114,70 @@ for i in range(n):
 
 36. abs(n1,n2) return subtraction of higher num - lower
 
-37. The eval() expression is a very powerful built-in function of Python. It helps in evaluating an expression. The expression can be a Python statement, or a code object.
+37. The eval() evaluats an expression. The expression can be a Python statement, or a code object.
 
 38. Multiple variable assignment -->  
 	x = y = z = 0
 	
 39. python does not support increment/decrement operators
 
-40. 
+40. count occourence of substr in string:
+s='hxxxxh'		#without overlapping
+s.count('xx')
+
+s='hxxxxh'		#with overlapping
+count=0
+for i in range(len(s)):
+    if 'xx'==s[i:i+2]:
+        count=count+1
+print(count)
 			
+41. if no_of_cats == no_of_dogs:
+		return True
+	else:
+		return False
+can be written as --> return no_of_cats == no_of_dogs
+#it will either evaluate to true or false. so instead of if else, directly write condition with return statement
+
+42. if flag==True:  ---> same as --->  f flag:
+#in this case, if flag is true, condition will be true. i.e. so directly write if flag as the condition.
+
+43. in for loop for i in iterable--> you can access i+1 i-2 elements
+
+44. str='catdogcat'
+for i in range(len(str)-3):
+#range(len(str)-3) because you want to check for occourence of cat. use str[i:i+3] so last two elements will not have i+1 and i+2
+#it will throw error
+
+45. a,b=2,3 --> will assign a=2 and b=3
+
+------------------------------------METHODS AND FUNCTION--------------------------------------------
+
+46. LEGB Rule:Local -->Enclosing function locals -->Global (module)-->Built-in (Python) 
+
+47. def myfunc(*args): ---> will accept any no oof arguments
+    return sum(args)*.05
+myfunc(40,60,20)
+
+48. def makes_twenty(n1,n2):
+		return (n1+n2)==20 or n1==20 or n2==20
+#jab sirf true ya false(bool value) return krna ho --> return with if condition
+
+49. l1=['hello','world']--> t1[0][0] =h
+
+50. (a==11 or b==11 or c==11) --> 11 in [a,b,c]
 			
-			
-			
-			
-			
+51. str.replace() --> USE CASE-can remove space in str
+
+52. to calculate sum of list, initialize sum=0
+	but to calculate product of list, initialize mul=1
+	
+53. fn name--> 	name_of_function 	(SNAKE CASING)
+	class name-->	NameOfClass		(CAMEL CASING)
+
+--------------------------Object Oriented Programming------------------------
+
+54.  flow: class keyword--class level attribute--init method for user defined attibutes 
 			
 			
 			
